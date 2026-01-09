@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Sphere : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class Sphere : MonoBehaviour
         cameraY.transform.localRotation = Quaternion.Euler(camRotY, 0f, 0f);
         cameraX.transform.position = transform.position;
 
-        //hi
+       
 
     }
 
@@ -52,5 +53,35 @@ public class Sphere : MonoBehaviour
     {
         MoveSphere();
         MoveCamera();
+ 
+    }
+
+    public class Jump : MonoBehaviour
+    {
+        [SerializeField]
+        InputAction jump;
+
+        [SerializeField]
+        float jumpForce = 5f;
+
+        Rigidbody rb;
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody>();
+        }
+
+
+        private void OnEnable()
+        {
+            jump.Enable();
+        }
+
+        private void FixedUpdate()
+        {
+            
+        }
+
+
     }
 }

@@ -39,9 +39,9 @@ public class Sphere : MonoBehaviour
         camRotY -= mouseY;
         camRotY = Mathf.Clamp(camRotY, -90, 90);
         cameraY.transform.localRotation = Quaternion.Euler(camRotY, 0f, 0f);
+        cameraX.transform.position = transform.position;
 
-
-
+        //hi
 
     }
 

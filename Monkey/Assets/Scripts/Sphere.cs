@@ -56,32 +56,5 @@ public class Sphere : MonoBehaviour
  
     }
 
-    public class Jump : MonoBehaviour
-    {
-        [SerializeField]
-        InputAction jump;
-
-        [SerializeField]
-        float jumpForce = 5f;
-
-        Rigidbody rb;
-
-        private void Start()
-        {
-            rb = GetComponent<Rigidbody>();
-        }
-
-
-        private void OnEnable()
-        {
-            jump.Enable();
-        }
-
-        private void FixedUpdate()
-        {
-            
-        }
-
-
-    }
+  
 }

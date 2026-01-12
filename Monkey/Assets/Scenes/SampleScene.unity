@@ -728,6 +728,7 @@ GameObject:
   - component: {fileID: 983035895}
   - component: {fileID: 983035894}
   - component: {fileID: 983035898}
+  - component: {fileID: 983035900}
   - component: {fileID: 983035899}
   m_Layer: 0
   m_Name: Player
@@ -867,6 +868,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &983035900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983035893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 223937e680471ef42adac813b02d0a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 7cc5ca79-ebb9-4fe4-bc44-7016091e58e3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d18039e9-c7ba-423d-ae97-823ecf8117de
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
+      m_Flags: 0
+    m_Flags: 0
+  jumpForce: 5
 --- !u!1 &1107208474
 GameObject:
   m_ObjectHideFlags: 0

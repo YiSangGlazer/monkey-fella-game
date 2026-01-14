@@ -12,13 +12,6 @@ public class MovingPlatform : MonoBehaviour
 
     private Vector3 targetPosition;
 
-
-
-
-
-
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,14 +23,14 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     IEnumerator MovePlatform()
     {
         while (true)
         {
-            while ((targetPosition - platform.transform.position).sqrMagnitude > 0.01f)
+            while ((targetPosition - platform.transform.position).sqrMagnitude > 0.1f)
             {
                 platform.transform.position = Vector3.MoveTowards(platform.transform.position, targetPosition, speed * Time.deltaTime);
                 yield return null;
@@ -47,11 +40,4 @@ public class MovingPlatform : MonoBehaviour
 
         }
     }
-
-
-
-
-
-
-
 }

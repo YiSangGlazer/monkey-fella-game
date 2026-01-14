@@ -1,14 +1,16 @@
+using System.Collections;
 using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
 
-    public int locationIndex = 0;
-    public Transform[] locations;
+    [SerializeField] GameObject Loc1;
+    [SerializeField] GameObject Loc2;
+    [SerializeField] float speed = 10f;
+    [SerializeField] float delay = 1f;
+    [SerializeField] GameObject platform;
 
-
-
-
+    private Vector3 targetPosition;
 
 
 
@@ -20,44 +22,33 @@ public class MovingPlatform : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        platform.transform.position = Loc1.transform.position;
+        targetPosition = Loc2.transform.position;
+        StartCoroutine(MovePlatform());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position != locations[locationIndex].position)
+        
+    }
+
+    IEnumerator MovePlatform()
+    {
+        while (true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, locations[locationIndex].position, 2 * Time.deltaTime);
-        }
-        else
-        {
-            if (locationIndex + 1 == locations.Length)
+            while ((targetPosition - platform.transform.position).sqrMagnitude > 0.01f)
             {
-                locationIndex = 0;
+                platform.transform.position = Vector3.MoveTowards(platform.transform.position, targetPosition, speed * Time.deltaTime);
+                yield return null;
             }
-            else
-            {
-                locationIndex++;
-            }
+            targetPosition = targetPosition == Loc1.transform.position ? Loc2.transform.position : Loc1.transform.position;
+            yield return new WaitForSeconds(delay);
+
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            collision.transform.parent = transform;
-        }
-    }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            collision.transform.parent = null;
-        }
-    }
 
 
 

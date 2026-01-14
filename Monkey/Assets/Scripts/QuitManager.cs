@@ -4,10 +4,14 @@ public class QuitManager : MonoBehaviour
 {
     public void QuitGame()
     {
-        // This line closes the application
+        // This line quits the actual built application
         Application.Quit();
 
-        // This line only works in the Unity Editor to show that the button works
+        // This line stops the "Play" mode in the Unity Editor
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
         Debug.Log("Game is exiting...");
     }
 }

@@ -4,6 +4,7 @@ public class QuitGame : MonoBehaviour
 {
     public void ExitApplication()
     {
+<<<<<<< HEAD
         // This logs a message so you know it's working while testing in the editor
         Debug.Log("Quit button pressed!");
 
@@ -23,5 +24,12 @@ public class QuitGame : MonoBehaviour
         {
             ExitApplication();
         }
+=======
+        // This line closes the application
+        Application.Quit();
+
+        // This line only works in the Unity Editor to show that the button works
+        Debug.Log("Game is exiting...");
+>>>>>>> parent of 4a9d0ed (john update fdb)
     }
 }

@@ -10,28 +10,22 @@ EditorBuildSettings:
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Title.unity
-    guid: 9214e6a2206742f48a6d7ed251347a07
+    guid: 90650299de586124b8bffef2d81d5c9d
   - enabled: 1
-    path: Assets/Scenes/beansw 1.unity
-    guid: 5f51c939f28a22b40918349b2bca7025
+    path: Assets/Scenes/level 1.unity
+    guid: 0a395e195887cfe40a1244edb0ad93ab
   - enabled: 1
-    path: Assets/Scenes/beansw.unity
+    path: Assets/Scenes/level 2.unity
     guid: f09a791481eaee044bcf78cb568a27fb
+  - enabled: 1
+    path: Assets/Scenes/level 3.unity
+    guid: 9c01601ae8b8f974e8d497f45ed8801f
   - enabled: 1
     path: Assets/Scenes/level 4.unity
     guid: 6c911590afbb47345b6fbf79972c317c
   - enabled: 1
-    path: Assets/Scenes/level 5.unity
-    guid: 128f2a25589b9fd4d80248090a243ae8
-  - enabled: 1
-    path: Assets/Scenes/my scene.unity
-    guid: 7257a8d73c3bc2948aa746c70da70ea8
-  - enabled: 1
-    path: Assets/Scenes/tutoriallevel 1.unity
-    guid: 0a395e195887cfe40a1244edb0ad93ab
-  - enabled: 1
-    path: Assets/Scenes/tutoriallevel 2.unity
-    guid: 9c01601ae8b8f974e8d497f45ed8801f
+    path: Assets/Scenes/IMPOSSIBLE.unity
+    guid: fb36d5514e8c7ac40b7c816982fa00ad
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

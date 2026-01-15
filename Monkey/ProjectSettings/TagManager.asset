@@ -3,8 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< Updated upstream
   tags:
   - Platform
+=======
+  tags: []
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -14,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Plastic
+  - Metal
+  - Concrete
   - 
   - 
   - 

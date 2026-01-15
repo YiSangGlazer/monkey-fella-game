@@ -7,3 +7,13 @@ ShaderImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+<<<<<<< Updated upstream
+=======
+AssetOrigin:
+  serializedVersion: 1
+  productId: 253878
+  packageName: Projectile Curve Visualizer
+  packageVersion: 1.0.0
+  assetPath: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  uploadId: 698931
+>>>>>>> Stashed changes

@@ -5287,3 +5287,13 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+<<<<<<< Updated upstream
+=======
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149311
+  packageName: 'Unity Learn | Creator Kit: Puzzle | URP'
+  packageVersion: 3.1
+  assetPath: Assets/TextMesh Pro/Resources/Sprite Assets/InlineIcons.png
+  uploadId: 690891
+>>>>>>> Stashed changes
